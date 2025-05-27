@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Résultats</title>
+</head>
+<body>
+  <h2>Résultats de la simulation</h2>
+  <p>Email saisi : <span id="email"></span></p>
+  <p>Mot de passe saisi : <span id="password"></span></p>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("password").textContent = params.get("password");
+  </script>
+</body>
+</html>
